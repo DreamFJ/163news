@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ "今天你财务自由了吗？" }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
