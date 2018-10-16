@@ -8,7 +8,7 @@
 import homeHeader from './home/homeHeader.vue'
 
 export default {
-  name: 'HelloWorld',
+  name: 'home',
   components: {homeHeader},
   data () {
     return {
