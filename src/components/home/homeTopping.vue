@@ -1,11 +1,13 @@
 <template>
     <div class="home-topping">
         <article v-for="item in toppingList">
-            <div class="title">{{item.title}}</div>
-            <div class="info">
-                <span class="topping">置顶</span>
-                <span class="site">{{item.site}}</span>
-            </div>
+            <a href="#">
+                <div class="title">{{item.title}}</div>
+                <div class="info">
+                    <span class="topping">置顶</span>
+                    <span class="site">{{item.site}}</span>
+                </div>
+            </a>
         </article>
     </div>
 </template>
@@ -22,7 +24,10 @@ article{
     border-bottom: 1px solid rgb(221, 217, 217);
 }
 .title{
-    font-size: .3rem;
+    font-size: .35rem;
+    line-height: .5rem;
+    font-family: PingFangSC-Medium, "Source Han Sans CN", sans-serif;
+    color: rgb(63, 65, 70);
 }
 .info{
     font-size: .15rem;

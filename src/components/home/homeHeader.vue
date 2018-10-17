@@ -1,13 +1,14 @@
 <template>
     <div class="home-header">
-        <i class="logo"></i>
-        <div class="search">
-            <ul :class="{scrollTop:animate}">
-                <li v-for="item in list"><span>{{item}}</span></li>
-            </ul>
+        <div class="header-top">
+            <i class="logo"></i>
+            <a href="#" class="login">
+                <i class="user"></i>
+            </a>
         </div>
-        <!-- <i class="live-broadcast"></i> -->
-        <span class="live-broadcast">直播</span>
+        <div class="header-nav">
+
+        </div>
     </div>
 </template>
 
@@ -38,52 +39,34 @@ export default {
 
 <style scoped>
 .home-header{
-    display: flex;
-    align-items: center;
-    height: .6rem;
-    padding: .1rem .2rem;
-    background-color: #ee1a1a;
-    color: #fff;
-    font-size: .2rem;
+    border-bottom: 1px solid rgb(221, 217, 217);
+}
+.header-top{
+    position: relative;
+    height: .7rem;
+    line-height: .7rem;
+    text-align: center;
 }
 .logo{
-    width: .6rem;
-    height: .4rem;
-    background: url('../../assets/imgs/logo.png') center no-repeat;
-}
-.search{
-    flex: auto;
-    background-color: #e96767d8;
-    height: .6rem;
-    margin: 0 .2rem;
-    border-radius: .3rem;
-    text-align: center;
-    overflow: hidden;
-}
-
-.scrollTop{
-    transition: all 0.5s;
-    margin-top: -0.6rem;
-}
-.search li{
-    height: .6rem;
-    line-height: .6rem;
-}
-.search li span{
     display: inline-block;
-    padding-left: .5rem;
-    position: relative;
+    width: 1.9rem;
+    height: 100%;
+    background: url('../../assets/imgs/logo.svg') center no-repeat;
+    background-size: 100% auto;
 }
-.search li span::before{
-    content: '';
-    width: .5rem;
-    height: .6rem;
+.login{
+    display: inline-block;
     position: absolute;
-    left: 0;
-    background: url('../../assets/imgs/search.png') no-repeat center;
-    background-size: .2rem;
+    right: .15rem;
+    top: .15rem;
+    font-size: 0;
+    line-height: 1;
 }
-.live-broadcast{
-    width: .4rem;
+.user{
+    display: inline-block;
+    background: url('../../../static/imgs/user.png') center no-repeat;
+    background-size: .45rem;
+    width: .45rem;
+    height: .45rem;
 }
 </style>
