@@ -1,6 +1,6 @@
 <template>
     <div class="home-topping">
-        <article v-for="item in toppingList">
+        <article class="topping-list" v-for="item in toppingList">
             <a href="#">
                 <div class="title">{{item.title}}</div>
                 <div class="info">
@@ -20,7 +20,8 @@
 </script>
 
 <style scoped>
-article{
+.topping-list{
+    padding: .25rem;
     border-bottom: 1px solid rgb(221, 217, 217);
 }
 .title{
@@ -28,14 +29,17 @@ article{
     line-height: .5rem;
     font-family: PingFangSC-Medium, "Source Han Sans CN", sans-serif;
     color: rgb(63, 65, 70);
+    margin-bottom: .15rem;
 }
 .info{
-    font-size: .15rem;
+    font-size: .25rem;
 }
 .topping{
-    color: #ee1a1a;
+    color: rgb(232, 102, 102);
+    font-weight: 100;
+    margin-right: .16rem;
 }
 .site{
-    color: #ccc;
+    color: rgb(155, 158, 163);
 }
 </style>
