@@ -14,4 +14,11 @@ export default {
 a{
   text-decoration: none;
 }
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0
+}
 </style>
