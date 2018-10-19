@@ -21,4 +21,9 @@ a{
     visibility: hidden;
     height: 0
 }
+.gap{
+    height: .15rem;
+    background-color: rgb(244, 244, 244);
+    font-size: 0;
+}
 </style>
