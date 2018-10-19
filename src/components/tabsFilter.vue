@@ -13,7 +13,7 @@
                 <h3>我的频道</h3>
                 <span>点击进入频道</span>
                 <span>恢复默认设置</span>
-                <span class="button">编辑</span>
+                <div class="button">编辑</div>
             </div>
         </div>
         <ul class="my-tabs-content">
@@ -97,8 +97,8 @@ export default {
   height: 0.32rem;
   position: relative;
   line-height: 0.32rem;
-  /* padding-top: 0.3rem; */
-  margin: 0 0.4rem 1.8rem;
+  padding-top: -0.3rem;
+  margin: 0 0.4rem -0.2rem;
   box-sizing: content-box;
 }
 .my-tabs-header .title h3 {
@@ -106,7 +106,7 @@ export default {
   font-size: 0.3rem;
   color: #3f4146;
   font-family: "PingFangSC-Medium", "Source Han Sans CN", sans-serif;
-  margin-right: 0.2rem;
+  margin-right: -10px;
 }
 .my-tabs-header .title span {
   font-size: 0.24rem;
@@ -114,6 +114,9 @@ export default {
 }
 
 .my-tabs-header .title .button {
+  position: absolute;
+  top: 26px;
+  right:0;
   display: inline-block;
   height: 0.4rem;
   line-height: 0.4rem;
@@ -126,10 +129,10 @@ export default {
   color: #9b9ea3;
   outline: none;
   float: right;
-  margin-right: -0.1rem;
-  margin-left: 0.24rem;
+  /* margin-right: -0.1rem;
+  margin-left: 0.24rem; */
   transition: all 0.2s;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   font-family: "Microsoft Yahei";
 }
 .close-tabs i {
@@ -145,31 +148,32 @@ export default {
 }
 .my-tabs-content {
   padding: 0 24px 18px;
-  display: block;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+  box-sizing: border-box;
 }
 
-.my-tabs-content li {
+.tabs-container .my-tabs-content li {
   display: inline-block;
+  list-style: none;
   vertical-align: top;
-  width: 25%;
+  width: 21%;
   margin: 12px 0;
-  padding: 0 12px;
+  padding: 0 6px;
   box-sizing: border-box;
 
   height: 68px;
   line-height: 68px;
   text-align: center;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 30px;
   color: #3f4146;
   background-color: #eeeff2;
   border-radius: 8px;
-      user-select: none;
+  user-select: none;
 }
 </style>
