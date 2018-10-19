@@ -12,9 +12,10 @@
                     <a href="#">{{item}}</a>
                 </span>
             </div>
-            <a href="#" class="expand">
+            <router-link  class="expand" :to="{path:'/tabsFilter'}">
                 <i></i>
-            </a>
+            </router-link>
+            
         </div>
     </div>
 </template>
