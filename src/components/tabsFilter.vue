@@ -60,7 +60,13 @@
             <li>24小时</li>
             <li>改革开放</li>
         </ul>
-        <div class="others-tabs"></div>
+        <div class="others-tabs">
+             <div class="title">
+                <h3>推荐频道</h3>
+                <span>地方频道</span>
+                <span>点击进入频道</span>
+            </div>
+        </div>
     </div>
 </template>
 <script>
@@ -116,7 +122,7 @@ export default {
 .my-tabs-header .title .button {
   position: absolute;
   top: 26px;
-  right:0;
+  right: 0;
   display: inline-block;
   height: 0.4rem;
   line-height: 0.4rem;
@@ -175,5 +181,9 @@ export default {
   background-color: #eeeff2;
   border-radius: 8px;
   user-select: none;
+}
+.others-tabs {
+  height: 28px;
+  overflow: hidden;
 }
 </style>
